@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/jua"
+        android:gravity="center_horizontal"
+        android:text="근처 수거함 찾기"
+        android:textColor="#346304"
+        android:textSize="30dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/m1"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/jua"
+            android:text="폐의약품 수거함"
+            android:textColor="#346304"
+            map:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/m2"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/jua"
+            android:text="폐형광등 수거함"
+            android:textColor="#346304"
+            map:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/m3"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/jua"
+            android:text="폐건전지 수거함"
+            android:textColor="#346304"
+            map:backgroundTint="#00FFFFFF" />
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/s_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        map:cameraZoom="10" />
+
+</LinearLayout>
